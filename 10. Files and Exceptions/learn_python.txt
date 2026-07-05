@@ -1,5 +1,0 @@
-WHAT I HAVE LEARNT ABOUT CLASSES
-In python I have learnt that Classes are a blue print used to creating this which are called objects
-In python I have learnt that these objects should have properties which are called attributes
-In python I have learnt that methods are created to bring out actions about what has to be created which is an object. 
-In python I have learnt that an instance is a particular object or thing that has been created using the blue print which is a class, now a real thing created from a class is called an instance.
