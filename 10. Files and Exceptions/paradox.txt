@@ -1,0 +1,144 @@
+The Project Gutenberg eBook of A Budget of Paradoxes, Volume II
+    
+This eBook is for the use of anyone anywhere in the United States and
+most other parts of the world at no cost and with almost no restrictions
+whatsoever. You may copy it, give it away or re-use it under the terms
+of the Project Gutenberg License included with this eBook or online
+at www.gutenberg.org. If you are not located in the United States,
+you will have to check the laws of the country where you are located
+before using this eBook.
+
+Title: A Budget of Paradoxes, Volume II
+
+Author: Augustus De Morgan
+
+Editor: David Eugene Smith
+
+
+        
+Release date: August 23, 2008 [eBook #26408]
+
+Language: English
+
+Other information and formats: www.gutenberg.org/ebooks/26408
+
+Credits: E-text prepared by David Starner, Keith Edkins, and the Project Gutenberg Online Distributed Proofreading Team
+
+
+*** START OF THE PROJECT GUTENBERG EBOOK A BUDGET OF PARADOXES, VOLUME II ***
+
+
+E-text prepared by David Starner, Keith Edkins, and the Project Gutenberg
+Online Distributed Proofreading Team (http://www.pgdp.net)
+
+
+
+Transcriber's note:
+
+      A few typographical errors have been corrected: they are
+      listed at the end of the text.
+
+      In mathematical formulae the carat (^) and underscore (_)
+      introduce superscripts or subscripts respectively, of one
+      character or a group enclosed in curly braces ({xyz}).
+      Elsewhere underscores delimit italics in the text, and
+      braces enclose the original page numbers thus {123}.
+
+
+
+
+
+BY AUGUSTUS DE MORGAN
+
+A BUDGET OF
+PARADOXES
+
+REPRINTED WITH THE AUTHOR'S ADDITIONS FROM THE ATHENAEUM
+
+SECOND EDITION EDITED BY DAVID EUGENE SMITH
+
+WITH A NEW INTRODUCTION BY ERNEST NAGEL
+
+PROFESSOR OF PHILOSOPHY, COLUMBIA UNIVERSITY
+
+UNABRIDGED EDITION--TWO VOLUMES BOUND AS ONE
+
+Volume II
+
+
+
+
+
+
+
+DOVER PUBLICATIONS, INC., NEW YORK
+
+       *       *       *       *       *
+
+_This new Dover Edition, published in 1954,
+is an unabridged republication of the Second Edition
+of 1915, with a new introduction by Professor Ernest Nagel._
+
+_Copyright 1954 by Dover Publications, Inc.
+Manufactured in the United States of America_
+
+       *       *       *       *       *
+
+
+{1}
+
+A BUDGET OF PARADOXES.
+
+VOLUME II.
+
+ON SOME PHILOSOPHICAL ATHEISTS.
+
+With the general run of the philosophical atheists of the last century the
+notion of a God was an hypothesis. There was left an admitted possibility
+that the vague somewhat which went by more names than one, might be
+personal, intelligent, and superintendent. In the works of Laplace,[1] who
+is sometimes called an atheist from his writings, there is nothing from
+which such an inference can be drawn: unless indeed a Reverend Fellow of
+the Royal Society may be held to be the fool who said in his heart, etc.,
+etc., if his contributions to the _Philosophical Transactions_ go no higher
+than _nature_. The following anecdote is well known in Paris, but has never
+been printed entire. Laplace once went in form to present some edition of
+his "Systeme du Monde" to the First Consul, or Emperor. Napoleon, whom some
+wags had told that this book contained no mention of the name of God, and
+who was fond of putting embarrassing questions, received it with--"M.
+Laplace, they tell me you have written this large book on the system of the
+universe, and have never even mentioned its Creator." Laplace, who, though
+the most supple of politicians, was as stiff as a martyr on every point of
+his philosophy or religion (e. g., even under Charles X he never concealed
+his dislike of the priests), drew himself up and answered {2} bluntly, "Je
+n'avais pas besoin de cette hypothese-la."[2] Napoleon, greatly amused,
+told this reply to Lagrange, who exclaimed, "Ah! c'est une belle hypothese;
+ca explique beaucoup de choses."[3]
+
+It is commonly said that the last words of Laplace were, "Ce que nous
+connaissons est peu de chose; ce que nous ignorons est immense."[4] This
+looks like a parody on Newton's pebbles:[5] the following is the true
+account; it comes to me through one remove from Poisson.[6] After the
+publication (in 1825) of the fifth volume of the _Mecanique Celeste_,
+Laplace became gradually weaker, and with it musing and abstracted. He
+thought much on the great problems of existence, and often muttered to
+himself, _Qu'est ce que c'est que tout cela!_[7] After many alternations,
+he appeared at last so permanently prostrated that his family applied to
+his favorite pupil, M. Poisson, to try to get a word from him. Poisson paid
+a visit, and after a few words of salutation, said, "J'ai une bonne
+nouvelle a vous annoncer: on a recu au Bureau des Longitudes une lettre
+d'Allemagne annoncant que M. Bessel a verifie par l'observation vos
+decouvertes theoriques sur les satellites de Jupiter."[8] Laplace opened
+his eyes and answered with deep {3} gravity, "_L'homme ne poursuit que des
+chimeres_."[9] He never spoke again. His death took place March 5, 1827.
+
+The language used by the two great geometers illustrates what I have said:
+a supreme and guiding intelligence--apart from a blind rule called _nature
+of things_--was an _hypothesis_. The absolute denial of such a ruling power
+was not in the plan of the higher philosophers: it was left for the smaller
+fry. A round assertion of the non-existence of anything which stands in the
+way is the refuge of a certain class of minds: but it succeeds only with
+things subjective; the objective offers resistance. A philosopher of the
+appropriative class tried it upon the constable who appropriated _him_: I
+deny your existence, said he; Come along all the same, said the
+unpsychological policeman.

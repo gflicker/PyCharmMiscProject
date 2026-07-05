@@ -1,4 +1,6 @@
 #My personal Expenses Tracker and Report
+from fundamentals import Fundamentals
+
 class Income:
     """Defining a function that will initialize income streams"""
     def __init__(self, day_job, side_hustle, freelancing):
@@ -50,3 +52,7 @@ my_income.get_income()
 my_income.get_extra_income()
 my_income.income_summary()
 
+my_fundamental_expenses = Fundamentals("Fundamentals", amount=0)
+my_fundamental_expenses.get_expenses()
+my_fundamental_expenses.expenses_summary()
+my_fundamental_expenses.total_expenses()
