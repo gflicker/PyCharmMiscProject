@@ -1,4 +1,6 @@
 #My personal Expenses Tracker and Report
+from sys import excepthook
+
 from fundamentals import*
 
 class Income:
@@ -12,24 +14,9 @@ class Income:
 
     def get_income(self):
         """A function for calculating the total income"""
-        while True:
-            try:
-                self.day_job = float(input('Day Job Amount: '))
-                break
-            except ValueError:
-                print("Please enter a numeric value")
-        while True:
-                try:
-                    self.side_hustle = float(input('Side Hustle Amount: '))
-                    break
-                except ValueError:
-                    print('Please enter a numeric value')
-        while True:
-                try:
-                    self.freelancing = float(input('Freelancing Amount: '))
-                    break
-                except ValueError:
-                    print("Please enter a numerical value")
+        self.day_job = self.get_valid_amount('Day Job Amount: ')
+        self.side_hustle = self.get_valid_amount('Side Hustle Amount: ')
+        self.freelancing = self.get_valid_amount('Freelancing Amount: ')
 
     def get_extra_income(self):
         """A function for calculating the extra income"""
@@ -42,14 +29,16 @@ class Income:
                 break
             else:
                 other = input("Enter the source of income: ")
-                while True:
-                    try:
-                        amount = float(input(f'{other} Amount: '))
-                        self.other_sources[other] = amount # or other_sources.update({other:amount})
-                        self.extras += amount
-                        break
-                    except ValueError:
-                        print("Please enter a numeric value")
+                amount = self.get_valid_amount(f'{other} Amount: ')
+                self.other_sources[other] = amount # or other_sources.update({other:amount})
+                self.extras += amount
+
+    def get_valid_amount(self, prompt):
+        while True:
+            try:
+                return float(input(prompt))
+            except ValueError:
+                print("Please enter a numeric value")
 
     def calculate_total_income(self):
         """A function for calculating the total income"""
