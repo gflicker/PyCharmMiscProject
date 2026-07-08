@@ -1,5 +1,4 @@
 #My personal Expenses Tracker and Report
-from sys import excepthook
 
 from fundamentals import*
 
