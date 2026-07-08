@@ -12,9 +12,24 @@ class Income:
 
     def get_income(self):
         """A function for calculating the total income"""
-        self.day_job = float(input('Day Job Amount: '))
-        self.side_hustle = float(input('Side Hustle Amount: '))
-        self.freelancing = float(input('Freelancing Amount: '))
+        while True:
+            try:
+                self.day_job = float(input('Day Job Amount: '))
+                break
+            except ValueError:
+                print("Please enter a numeric value")
+        while True:
+                try:
+                    self.side_hustle = float(input('Side Hustle Amount: '))
+                    break
+                except ValueError:
+                    print('Please enter a numeric value')
+        while True:
+                try:
+                    self.freelancing = float(input('Freelancing Amount: '))
+                    break
+                except ValueError:
+                    print("Please enter a numerical value")
 
     def get_extra_income(self):
         """A function for calculating the extra income"""
@@ -27,9 +42,14 @@ class Income:
                 break
             else:
                 other = input("Enter the source of income: ")
-                amount = float(input(f'{other} Amount: '))
-                self.other_sources[other] = amount # or other_sources.update({other:amount})
-                self.extras += amount
+                while True:
+                    try:
+                        amount = float(input(f'{other} Amount: '))
+                        self.other_sources[other] = amount # or other_sources.update({other:amount})
+                        self.extras += amount
+                        break
+                    except ValueError:
+                        print("Please enter a numeric value")
 
     def calculate_total_income(self):
         """A function for calculating the total income"""
