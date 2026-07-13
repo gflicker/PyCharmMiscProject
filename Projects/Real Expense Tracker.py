@@ -180,7 +180,7 @@ if savings_subtotal > savings_quota:
 elif savings_quota == savings_subtotal:
     print("You saved exactly the allocated amount. Keep saving smart")
 else:
-    print(f'You have spent less than allocated, consider spending'
+    print(f'You saved less than allocated, consider saving'
           f' K{savings_quota - savings_subtotal} more.')
 
 print("\nSpend wisely and don't forget to save for a rainy day.")
