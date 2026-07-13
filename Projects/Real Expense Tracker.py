@@ -114,16 +114,16 @@ grand_padding = "Total Expenses:"
 payout_padding = "Payout Balance:"
 sub_summary = "\n=============SUBTOTAL SUMMARY============="
 subtotal_line = "------------------------------------------"
-available_padding = "Available Cash:"
-fundamental_banner = "Fundamental Expenses:"
-recreation_banner = "Fun Expenses:"
-savings_banner = "Savings Expenses:"
+available_padding = "Available Cash"
+fundamental_banner = "Fundamental Expenses"
+recreation_banner = "Fun Expenses"
+savings_banner = "Savings"
 
 print(f'{sub_summary:^35}')
-print(f'{payout_padding:<35} K{available_cash}')
-print(f'{fundamental_banner:<35} K{fundamental_subtotal}')
-print(f'{recreation_banner:<35} K{fun_subtotal}')
-print(f'{savings_banner:<35} K{savings_subtotal}')
+print(f'{payout_padding:<35}: K{available_cash}')
+print(f'{fundamental_banner:<35}: K{fundamental_subtotal}')
+print(f'{recreation_banner:<35}: K{fun_subtotal}')
+print(f'{savings_banner:<35}: K{savings_subtotal}')
 
 print(f'{subtotal_line:^35}')
 print(f'{grand_padding:<35} K{grand_expenses}')
@@ -133,34 +133,54 @@ print(f'{available_padding:<35} K{remainder}')
 """This is a report section, indicating how much of each category has been used."""
 report = "============REPORT SUMMARY============"
 print(f'\n{report:^35}')
-"""Fundamental Expenses Report"""
-print("Fundamental Expenses Report")
+
 fundamental_quota = ((50/100) * available_cash)
+fun_quota = ((30/100) * available_cash)
+savings_quota = ((20/100) * available_cash)
+
+if remainder < 0:
+    print("Sorry you spent more than you earn.")
+    print(f'Kindly cut the following from your budget:')
+    if fundamental_subtotal > fundamental_quota:
+        print(f"{fundamental_banner}: K{fundamental_subtotal - fundamental_quota}")
+
+    if fun_subtotal > fun_quota:
+        print(f'{recreation_banner}: K{fun_subtotal - fun_quota}')
+
+    if savings_subtotal > savings_quota:
+        print(f'{savings_banner}: K{savings_subtotal - savings_quota}')
+
+"""Fundamental Expenses report"""
+print(f'\n{fundamental_banner}')
 if fundamental_subtotal > fundamental_quota:
-    print(f"You have spent more that your allocated amount."
-          f"\nKindly cut your budget by K{fundamental_subtotal - fundamental_quota}")
+    print(f"You spent K{fundamental_subtotal - fundamental_quota} more "
+          f"than allocated amount.")
+elif fundamental_subtotal == fundamental_quota:
+    print("You spend exactly the allocated amount. Keep spending smart")
 else:
-    print(f"You have not spent more that your allocated amount."
-          f"\nKindly save K{fundamental_quota - fundamental_subtotal} remaining")
+    print(f'You have spent less than allocated, consider spending'
+          f'K{fundamental_quota - fundamental_subtotal} more.')
 
 """Fun Expenses Report"""
-print("\nFun Expenses Report")
-fun_quota = ((30/100) * available_cash)
+print(f'\n{recreation_banner}')
 if fun_subtotal > fun_quota:
-    print(f"You have spent more that your allocated amount."
-          f"\nKindly cut your budget by K{fun_subtotal - fun_quota}")
+    print(f"You have spent K{fun_subtotal - fun_quota} more "
+          f"than allocated amount.")
+elif fun_subtotal == fun_quota:
+    print("You spent exactly the allocated amount, keep spending smart")
 else:
-    print(f"You have not spent more that your allocated amount."
-          f"\nKindly save K{fun_quota - fun_subtotal} remaining")
+    print(f'You have spent less than allocated, consider spending'
+          f' K{fun_quota - fun_subtotal} more.')
 
 """Savings Report"""
-print("\nSavings Report")
-savings_quota = ((20/100) * available_cash)
+print(f'\n{savings_banner}')
 if savings_subtotal > savings_quota:
-    print(f"You are saving more than planned."
-          f"\nKindly check if you missed something in your budget.")
+    print(f"You have spent K{savings_subtotal - savings_quota} more "
+          f"than allocated amount.")
+elif savings_quota == savings_subtotal:
+    print("You saved exactly the allocated amount. Keep saving smart")
 else:
-    print(f"You are saving less than the threshold."
-          f"\nTo make the threshold save K{savings_quota - savings_subtotal} more.")
+    print(f'You have spent less than allocated, consider spending'
+          f' K{savings_quota - savings_subtotal} more.')
 
-print("Remember, spend wisely and don't forget to save for a rainy day.")
+print("\nSpend wisely and don't forget to save for a rainy day.")
