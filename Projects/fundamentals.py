@@ -1,3 +1,5 @@
+import json
+
 class Fundamentals:
     """Class to represent the fundamentals class"""
     def __init__(self):
@@ -44,6 +46,22 @@ class Fundamentals:
     def get_fundamental_category(self):
         fundamentals_banner = "Fundamental Expenses"
         print(f'\n{fundamentals_banner:^40}')
+        return fundamentals_banner
+
+    def data_filename(self):
+        self.get_fundamental_category()
+        filename = "fundamentals.txt"
+        return filename
+
+    def save_data(self):
+        filename = self.data_filename()
+        data_to_save = {
+            "Expenses": self.expenses,
+            "Total Expenses": self.total_expenses(),
+        }
+        with open(filename, 'w') as csvfile:
+            json.dump(data_to_save, csvfile)
+
 
 class Fun(Fundamentals):
     """Class to represent the fun or recreation expenses"""
@@ -52,6 +70,10 @@ class Fun(Fundamentals):
         recreation_banner = "Recreation Expenses"
         print(f'\n{recreation_banner:^40}')
 
+    def data_filename(self):
+        filename = "fun.txt"
+        return filename
+
 
 class Savings(Fundamentals):
     """Class to represent the savings expenses"""
@@ -59,4 +81,8 @@ class Savings(Fundamentals):
         """Getting the savings name category and center align it"""
         savings_banner = "Savings"
         print(f'\n{savings_banner:^40}')
+
+    def data_filename(self):
+        filename = "savings.txt"
+        return filename
 
