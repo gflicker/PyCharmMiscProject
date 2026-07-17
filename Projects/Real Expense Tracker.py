@@ -65,6 +65,12 @@ class Income:
             print(f'{source:<35} K{value}')
         print(f'{lower_line:<35}')
         print(f'{total_income:<35} K{self.calculate_total_income()}')
+        return
+
+    def save_income_data(self):
+        filename = "Projects/modules/income.txt"
+        with open(filename, "w") as income_file:
+            json.dump(self.other_sources, income_file)
 
 
 #Creating and calling an instance of the object
@@ -100,6 +106,11 @@ my_fun.total_expenses()
 my_savings.get_saving_category()
 my_savings.expenses_summary()
 my_savings.total_expenses()
+
+"""Saving data to a text file"""
+my_needs.save_data()
+my_fun.save_data()
+my_savings.save_data()
 
 """Determining Total Expenses for all three categories, to control overspending"""
 available_cash = my_income.calculate_total_income()
